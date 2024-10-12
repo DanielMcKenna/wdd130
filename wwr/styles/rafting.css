@@ -8,6 +8,71 @@
 body {
   background-color: var(--primary-color);
 }
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  max-width: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical centering */
+  align-items: center; /* Horizontal centering */
+  text-align: center;
+  padding: 20px;
+  height: auto; /* Let content determine height */
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.adventure h2 {
+  grid-column: span 5;
+  text-align: center;
+  font-size: 24px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
 
 h1,
 h2,
@@ -69,4 +134,26 @@ a:hover {
 .hero article p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.sociallinks {
+  display: flex;
+  gap: 15px;
+}
+
+.sociallinks img {
+  width: 24px;
+  height: auto;
 }
