@@ -34,11 +34,11 @@ nav a {
 .history {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical centering */
-  align-items: center; /* Horizontal centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 20px;
-  height: auto; /* Let content determine height */
+  height: auto;
 }
 
 .adventure {
@@ -156,4 +156,118 @@ footer p {
 .sociallinks img {
   width: 24px;
   height: auto;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h2,
+h3 {
+  color: var(--accent2-color);
+  margin-bottom: 10px;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.company-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.company-info .info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.company-info .map {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employee-profiles {
+  text-align: center;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile p {
+  margin-top: 10px;
+}
+
+.contact-form {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color);
 }
