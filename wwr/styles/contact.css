@@ -37,6 +37,13 @@ section {
   margin-bottom: 40px;
 }
 
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .company-info {
   display: flex;
   justify-content: space-between;
