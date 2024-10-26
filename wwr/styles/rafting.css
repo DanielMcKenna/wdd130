@@ -110,7 +110,7 @@ body {
 }
 
 .hero-text h1 {
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   font-size: 2.5em;
   margin: 0;
 }
@@ -143,7 +143,7 @@ body {
 }
 
 .newsletter h2 {
-  font-family: "Playfair Display", serif;
+  font-family: serif;
 }
 
 .newsletter form {
@@ -175,7 +175,7 @@ body {
 }
 
 .grid-content h3 {
-  font-family: "Playfair Display", serif;
+  font-family: serif;
   color: var(--secondary-color);
 }
 
