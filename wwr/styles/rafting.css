@@ -5,14 +5,19 @@
   --accent2-color: #006989;
   --header-paragraph-color: #eaebed;
 }
+
 body {
   background-color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
 }
+
 header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   padding: 10px;
+  background-color: var(--primary-color);
 }
 
 header img {
@@ -31,109 +36,9 @@ nav a {
   font-size: 16px;
 }
 
-.history {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+main {
+  width: 100%;
   padding: 20px;
-  height: auto;
-}
-
-.adventure {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.adventure h2 {
-  grid-column: span 5;
-  text-align: center;
-  font-size: 24px;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-figcaption {
-  margin-top: 10px;
-  font-style: italic;
-  color: #555;
-}
-
-h1,
-h2,
-h3,
-p {
-  color: var(--header-paragraph-color);
-}
-
-a {
-  color: var(--accent1-color);
-}
-
-a:hover {
-  color: var(--accent2-color);
-}
-
-.sociallinks {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1,
-.hero article {
-  position: absolute;
-  z-index: 10;
-  left: 0;
-}
-.hero h1 {
-  top: 10%;
-  left: 10%;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero article {
-  top: 30%;
-  left: 10%;
-  max-width: 500px;
-  z-index: 10;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.hero article img {
-  float: right;
-  margin-left: 20px;
-  max-width: 200px;
-}
-
-.hero article p {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 footer {
@@ -141,6 +46,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background-color: var(--primary-color);
+  width: 100%;
 }
 
 footer p {
@@ -158,15 +65,26 @@ footer p {
   height: auto;
 }
 
-.contact-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+body {
+  display: block;
+  min-height: 100vh;
 }
 
-h2,
-h3 {
-  color: var(--accent2-color);
-  margin-bottom: 10px;
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.pricing-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
